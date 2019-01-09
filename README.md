@@ -1,12 +1,14 @@
-# MS Certification Exam Parser
+# Microsoft Certification Exam Parser
 
-This is the first Python program I wrote, I learned the language while working on this. My next target is F#.
+> This is my first Python program. The code might not be the best.
 
-Outputs the topics of a Microsoft certification exam into a JSON file. ("Skills measured" section in the exam's webpage)
+Outputs the topics of a Microsoft certification exam into a JSON file. (The `Skills measured` section in the exam's webpage)
 
 [List of all Microsoft Certification Exams](https://www.microsoft.com/en-us/learning/exam-list.aspx)
 
-Example output for the [Python exam](https://www.microsoft.com/en-us/learning/exam-98-381.aspx):
+## Output
+
+> Excerpt from the output for the [Python exam](https://www.microsoft.com/en-us/learning/exam-98-381.aspx):
 
 ```jsonc
 [
@@ -31,10 +33,11 @@ Example output for the [Python exam](https://www.microsoft.com/en-us/learning/ex
 ## Usage
 
 ```shell
-main.py 98-381 98-361
+main.py 98-381
+main.py 70-483 98-361
 ```
 
-Clearing the cache:
+Clearing the cache: (deletes the `out/` directory)
 
 ```shell
 main.py --clear
